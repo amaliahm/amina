@@ -5,6 +5,35 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap');
 
 :root {
+
+  /* font*/
+  --headline-text: 62px;
+  --subheadline-text: 32px;
+  --body-text: 18px;
+  --lables: 16px;
+  --code-snippets: 14px;
+
+  /* colors */
+  --primary-color-one: #01080E;
+  --primary-color-two: #011627;
+  --primary-color-three: #011221;
+
+  --secondary-color-one: #607B96;
+  --secondary-color-two: #3C9D93;
+  --secondary-color-three: #4D5BCE;
+  --secondary-color-four: #FFFFFF;
+
+  --accent-color-one: #FEA55F;
+  --accent-color-two: #43D9AD;
+  --accent-color-three: #E99287;
+  --accent-color-four: #C98BDF;
+
+  --lines-color: #1E2D3D;
+
+  --gradients-color-one: #4D5BCE;
+  --gradients-color-two: #43D9AD;
+
+
   font-family: 'Fira Code', monospace;
   line-height: 1.5;
   font-weight: 400;
@@ -18,6 +47,48 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+/* buttons */
+.btn {
+  border-radius: 0.5em;
+  margin: 10px;
+  padding: 10px 14px;
+  cursor: pointer;
+}
+
+.btn.primary {
+  background-color: var(--accent-color-one);
+  color: var(--primary-color-one);
+}
+
+.btn.primary.hover {
+  background-color: #FFAC6B;
+}
+
+.btn.default {
+  background-color: #1C2B3A;
+  color: var(--secondary-color-four);
+}
+
+.btn.default.hover {
+  background-color: #263B50;
+}
+
+.btn.ghost {
+  border: 1px solid var(--secondary-color-four);
+  color: var(--secondary-color-four);
+}
+
+.btn.ghost.hover {
+  border-color: rgba(255, 255, 255, 0.5);
+}
+
+
+
+
+
+
+
 
 a {
   font-weight: 500;

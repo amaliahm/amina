@@ -2,7 +2,8 @@ function App() {
 
   return (
     <>
-      Whereas recognition of the inherent dignity
+      <div className="btn ghost hover"> hey </div>
+      <div className="btn ghost"> hey </div>
     </>
   )
 }
