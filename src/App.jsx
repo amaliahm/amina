@@ -1,9 +1,16 @@
+import HomeComponent from "./home/home"
+import { useState, useEffect } from "react"
+
 function App() {
+  const [isPhone, setIsPhone] = useState(false)
+  useEffect(() => {
+    setIsPhone(window.innerWidth <= 768)
+  }, [])
+  
 
   return (
     <>
-      <div className="btn ghost hover"> hey </div>
-      <div className="btn ghost"> hey </div>
+      <HomeComponent isPhone={isPhone} />
     </>
   )
 }
