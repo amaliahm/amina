@@ -18,18 +18,21 @@ import GithubIcon from "../assets/icons/GithubIcon.vue";
     >
       <a
         href="https://twitter.com/amina_gh_"
+        target="_blank"
         class="p-4 border-solid border-[#1e2d3d] border-r-[1px] hover:text-white"
       >
         <TwitterIcon />
       </a>
       <a
         href="https://instagram.com/amina._.gh_"
+        target="_blank"
         class="p-4 border-solid border-[#1e2d3d] border-r-[1px] hover:text-white"
       >
         <InstagramIcon />
       </a>
       <a 
         href="https://github.com/amaliahm" 
+        target="_blank"
         class="p-4 text-sm hover:text-white"
       >
         <GithubIcon />
