@@ -3,8 +3,7 @@ import { ref } from "vue";
 import CloseIcon from "../assets/icons/CloseIcon.vue";
 import HamburgerIcon from "../assets/icons/HamburgerIcon.vue"
 import useNavStore from "../stores/navStore"
-
-// import FooterBarMobile from "./FooterBarMobile.vue";
+import FooterBarMobile from "./FooterBarMobile.vue"
 
 const isMenuOpen = ref(false);
 const navStore = useNavStore();
@@ -58,8 +57,7 @@ function changeRoute(elem) {
       >
         {{ ele }}
       </li>
-
-      <!-- <FooterBarMobile /> -->
+      <FooterBarMobile />
     </div>
   </ul>
 </template>
