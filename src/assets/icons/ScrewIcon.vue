@@ -1,0 +1,27 @@
+<script setup></script>
+
+<template>
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="1em"
+    height="1em"
+    viewBox="0 0 48 48"
+  >
+    <mask id="ipSCrossSociety0">
+      <path
+        fill="#fff"
+        stroke="#fff"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth="4"
+        d="M7 18h11V7a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v11h11a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H30v11a2 2 0 0 1-2 2h-8a2 2 0 0 1-2-2V30H7a2 2 0 0 1-2-2v-8a2 2 0 0 1 2-2Z"
+      ></path>
+    </mask>
+    <path
+      fill="currentColor"
+      d="M0 0h48v48H0z"
+      mask="url(#ipSCrossSociety0)"
+    >
+    </path>
+  </svg>
+</template>

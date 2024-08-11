@@ -1,7 +1,9 @@
 <script setup>
+
 import NavBar from "./components/NavBar.vue"
 import NavBarMobile from "./components/NavBarMobile.vue"
 import FooterBar from "./components/FooterBar.vue"
+import Hero from "./hello/Hero.vue"
 
 </script>
 
@@ -11,6 +13,18 @@ import FooterBar from "./components/FooterBar.vue"
   >
     <NavBar />
     <NavBarMobile />
-    <footerBar />
+    <Transition 
+      name="fade"
+      mode="out-in"
+      appear
+      @after-leave="onAfterLeave"
+    >
+      <template 
+        v-if="navStore.activeElement == '_hello'"
+      >
+        <Hero />
+      </template>
+    </Transition>
+    <FooterBar />
   </div>
 </template>
