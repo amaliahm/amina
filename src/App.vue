@@ -3,7 +3,7 @@
 import NavBar from "./components/NavBar.vue"
 import NavBarMobile from "./components/NavBarMobile.vue"
 import FooterBar from "./components/FooterBar.vue"
-import Hero from "./hello/Hero.vue"
+// import Hero from "./hello/Hero.vue"
 
 </script>
 
@@ -13,7 +13,7 @@ import Hero from "./hello/Hero.vue"
   >
     <NavBar />
     <NavBarMobile />
-    <Transition 
+    <!-- <Transition 
       name="fade"
       mode="out-in"
       appear
@@ -24,7 +24,7 @@ import Hero from "./hello/Hero.vue"
       >
         <Hero />
       </template>
-    </Transition>
+    </Transition> -->
     <FooterBar />
   </div>
 </template>
