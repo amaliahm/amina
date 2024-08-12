@@ -1,0 +1,17 @@
+<template>
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="1.25em"
+    height="1.25em"
+    viewBox="0 0 24 24"
+  >
+    <path
+      fill="currentColor"
+      d="M12 22H3a1 1 0 0 1-.707-1.707l1.964-1.964A10 10 0 1 1 12 22Z"
+      opacity=".5"
+    >
+    </path>
+  </svg>
+</template>
+
+<script setup></script>

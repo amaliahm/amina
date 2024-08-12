@@ -4,6 +4,7 @@ import NavBar from "./components/NavBar.vue"
 import NavBarMobile from "./components/NavBarMobile.vue"
 import FooterBar from "./components/FooterBar.vue"
 // import Hero from "./hello/Hero.vue"
+import AboutMe from "./AboutMe/AboutMe.vue"
 
 </script>
 
@@ -13,18 +14,23 @@ import FooterBar from "./components/FooterBar.vue"
   >
     <NavBar />
     <NavBarMobile />
-    <!-- <Transition 
+    <Transition 
       name="fade"
       mode="out-in"
       appear
       @after-leave="onAfterLeave"
     >
-      <template 
+      <!-- <template 
         v-if="navStore.activeElement == '_hello'"
       >
         <Hero />
+      </template> -->
+      <template 
+        v-if="navStore.activeElement == '_about-me'"
+      >
+        <AboutMe />
       </template>
-    </Transition> -->
+    </Transition>
     <FooterBar />
   </div>
 </template>
