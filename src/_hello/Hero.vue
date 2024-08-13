@@ -65,7 +65,7 @@ import Game from "./Game.vue";
       <h3
         class="text-left text-[1.50em] whitespace-nowrap md:text-[2em] text-[#43D9AD] lg:text-[#4D5BCE]"
       >
-        > Front-End Developer
+        > Full Stack Developer
       </h3>
 
       <p class="hidden lg:block mt-12 text-gray-500">
@@ -138,5 +138,5 @@ import Game from "./Game.vue";
       <Game />
     </div>
   </div>
-  
+
 </template>

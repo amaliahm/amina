@@ -6,8 +6,8 @@ import NavigationBarMobile from "./components/NavBarMobile.vue";
 import FooterBar from "./components/FooterBar.vue";
 import HeroSection from "./_hello/Hero.vue";
 import useNavStore from "./stores/navStore";
+import AboutMe from "./_about-me/About.vue";
 
-// import AboutSection from "./components/_about-me/AboutSection.vue";
 
 // import ProjectsSection from "./components/_projects/ProjectsSection.vue";
 // import ContactSection from "./components/_contact-me/ContactSection.vue";
@@ -21,14 +21,21 @@ const navStore = useNavStore();
   >
     <NavigationBar />
     <NavigationBarMobile />
-
-    <Transition name="fade" mode="out-in" appear @after-leave="onAfterLeave">
-      <template v-if="navStore.activeElement == '_hello'">
+    <Transition 
+      name="fade" 
+      mode="out-in" 
+      appear @after-leave="onAfterLeave"
+    >
+      <template 
+        v-if="navStore.activeElement == '_hello'"
+      >
         <HeroSection />
       </template>
-      <!-- <template v-else-if="navStore.activeElement == '_about-me'">
-        <AboutSection />
-      </template> -->
+      <template 
+        v-else-if="navStore.activeElement == '_about-me'"
+      >
+        <AboutMe />
+      </template>
       <!-- <template v-else-if="navStore.activeElement == '_projects'">
         <ProjectsSection />
       </template> -->
