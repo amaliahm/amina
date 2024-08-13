@@ -1,9 +1,10 @@
 <script setup>
+
 import { ref } from "vue";
+import useNavStore from "../stores/navStore";
+import FooterBarMobile from "./FooterBarMobile.vue";
+import HamburgerIcon from "../assets/icons/HamburgerIcon.vue";
 import CloseIcon from "../assets/icons/CloseIcon.vue";
-import HamburgerIcon from "../assets/icons/HamburgerIcon.vue"
-import useNavStore from "../stores/navStore"
-import FooterBarMobile from "./FooterBarMobile.vue"
 
 const isMenuOpen = ref(false);
 const navStore = useNavStore();
@@ -12,9 +13,11 @@ function changeRoute(elem) {
   navStore.setActiveElement(elem);
   isMenuOpen.value = false;
 }
+
 </script>
 
 <template>
+
   <ul
     class="relative flex lg:hidden flex-row justify-between text-[#607B96] border-solid border-[#1e2d3d] border-b-[1px]"
   >

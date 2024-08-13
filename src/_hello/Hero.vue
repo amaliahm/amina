@@ -1,6 +1,6 @@
-<script>
+<script setup>
 
-import Game from "./Game.vue"
+import Game from "./Game.vue";
 
 </script>
 
@@ -8,9 +8,7 @@ import Game from "./Game.vue"
   <div
     class="h-full w-screen max-w-screen grid grid-cols-1 lg:grid-cols-2 items-center justify-center gap-4 px-5 lg:px-[15%] py-12 overflow-x-hidden"
   >
-    <div 
-      class="relative h-5/6 lg:h-fit flex flex-col items-start"
-    >
+    <div class="relative h-5/6 lg:h-fit flex flex-col items-start">
       <div
         class="lg:hidden absolute top-0 left-0 h-[20em] w-[20em] border-2 z-[-10] blur-2xl"
       >
@@ -57,7 +55,10 @@ import Game from "./Game.vue"
           class="h-[90%] w-[90%] flex items-center justify-center bg-gradient-to-br from-[#43D9AD] to-[#4D5BCE] opacity-40 rotate-45"
         />
       </div>
-      <p class="text-xl">Hi all. I am</p>
+
+      <p class="text-xl">
+        Hi all. I am
+      </p>
       <h1 class="text-[3em] lg:text-[4em] text-left leading-tight">
         Amina Ghandouz
       </h1>
@@ -66,27 +67,19 @@ import Game from "./Game.vue"
       >
         > Front-End Developer
       </h3>
-      <p 
-        class="hidden lg:block mt-12 text-gray-500"
-      >
+
+      <p class="hidden lg:block mt-12 text-gray-500">
         // complete the game to continue
       </p>
-      <p 
-        class="hidden lg:block text-gray-500"
-      >
+      <p class="hidden lg:block text-gray-500">
         // you can also see it on my github page
       </p>
-      <p 
-        class="lg:hidden text-gray-500 mt-auto"
-      >
+
+      <p class="lg:hidden text-gray-500 mt-auto">
         // find my profile on Github:
       </p>
-      <p 
-        class="flex flex-col md:flex-row gap-2 md:gap-3 mt-2"
-      >
-        <span 
-          class="text-green-400"
-        >
+      <p class="flex flex-col md:flex-row gap-2 md:gap-3 mt-2">
+        <span class="text-green-400">
           <span class="text-blue-600">
             const
           </span> 
@@ -97,8 +90,8 @@ import Game from "./Game.vue"
           target="_blank"
           class="text-yellow-600 underline lg:no-underline"
         >
-          "https://github.com/amaliahm"</a
-        >
+          "https://github.com/amaliahm"
+        </a>
       </p>
     </div>
     <div 
@@ -145,4 +138,5 @@ import Game from "./Game.vue"
       <Game />
     </div>
   </div>
+  
 </template>

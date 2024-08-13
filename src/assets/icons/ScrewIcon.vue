@@ -1,5 +1,3 @@
-<script setup></script>
-
 <template>
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -21,7 +19,8 @@
       fill="currentColor"
       d="M0 0h48v48H0z"
       mask="url(#ipSCrossSociety0)"
-    >
-    </path>
+    ></path>
   </svg>
 </template>
+
+<script setup></script>

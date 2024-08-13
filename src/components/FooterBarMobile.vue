@@ -1,6 +1,6 @@
 <script setup>
 
-import InstagramIcon from "../assets/icons/InstagramIcon.vue"
+import InstagramIcon from "../assets/icons/InstagramIcon.vue";
 import TwitterIcon from "../assets/icons/TwitterIcon.vue";
 import GithubIcon from "../assets/icons/GithubIcon.vue";
 
@@ -11,7 +11,7 @@ import GithubIcon from "../assets/icons/GithubIcon.vue";
     class="relative flex lg:hidden flex-row items-center justify-between mt-auto text-[#607B96] border-solid border-[#1e2d3d] border-t-[1px]"
   >
     <li class="pl-6">
-        find me in
+      find me in
     </li>
     <li
       class="flex items-center text-2xl border-solid border-[#1e2d3d] border-l-[1px]"

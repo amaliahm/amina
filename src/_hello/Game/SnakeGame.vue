@@ -1,11 +1,14 @@
 <script setup>
 
-import { onMounted, ref, watch } from "vue";
 import P5 from "p5";
+import { onMounted, ref, watch } from "vue";
 
 const { eatFood } = defineProps(["eatFood"]);
+
 const canvasRef = ref(null);
+
 const gameInProgress = ref("inactive");
+
 const script = function (p5) {
   let snake;
   let rez = 10;
@@ -33,16 +36,20 @@ const script = function (p5) {
     let bottomOpacity = 0.1;
     let middleOpacity = 0.2;
     let topOpacity = 1.0;
-    let middleRectWidth = rectWidth * 0.7;
-    let middleRectHeight = rectHeight * 0.7;
-    let topRectWidth = middleRectWidth * 0.4;
-    let topRectHeight = middleRectHeight * 0.4;
 
     p5.fill(67, 217, 173, bottomOpacity * 255);
     p5.rect(posX - 0.95, posY - 0.9, rectWidth, rectHeight, 5);
     p5.fill(67, 217, 173, middleOpacity * 255);
+
+    let middleRectWidth = rectWidth * 0.7;
+    let middleRectHeight = rectHeight * 0.7;
+
     p5.rect(posX - 0.55, posY - 0.55, middleRectWidth, middleRectHeight, 10);
     p5.fill(67, 217, 173, topOpacity * 255);
+
+    let topRectWidth = middleRectWidth * 0.4;
+    let topRectHeight = middleRectHeight * 0.4;
+
     p5.rect(posX, posY, topRectWidth, topRectHeight, 10);
   }
 
@@ -83,9 +90,9 @@ const script = function (p5) {
       if (x > w - 1 || x < 0 || y > h - 1 || y < 0) {
         return true;
       }
+
       for (let i = 0; i < this.body.length - 1; i++) {
         let part = this.body[i];
-
         if (part.x == x && part.y == y) {
           return true;
         }
@@ -156,18 +163,22 @@ const script = function (p5) {
   };
 
   p5.keyPressed = (key) => {
+
     if (key.code == "ArrowUp" && gameInProgress.value != "end") {
       snake.setDir(0, -1);
       gameInProgress.value = "progress";
     }
+
     if (key.code == "ArrowLeft" && gameInProgress.value != "end") {
       snake.setDir(-1, 0);
       gameInProgress.value = "progress";
     }
+
     if (key.code == "ArrowRight" && gameInProgress.value != "end") {
       snake.setDir(1, 0);
       gameInProgress.value = "progress";
     }
+
     if (key.code == "ArrowDown" && gameInProgress.value != "end") {
       snake.setDir(0, 1);
       gameInProgress.value = "progress";
@@ -178,6 +189,10 @@ const script = function (p5) {
 onMounted(() => {
   new P5(script);
 });
+
+function gameStart() {
+  window.location.reload();
+}
 
 </script>
 
@@ -206,15 +221,18 @@ onMounted(() => {
         GAME OVER
       </p>
       <button
+        @click="gameStart"
         class="w-fit p-2 mx-auto text-black bg-yellow-400 rounded-lg"
       >
         start-again
       </button>
     </div>
   </Transition>
+
 </template>
 
 <style scoped>
+
 .fade-enter-active,
 .fade-leave-active {
   transition: opacity 0.5s ease;
@@ -224,4 +242,5 @@ onMounted(() => {
 .fade-leave-to {
   opacity: 0;
 }
+
 </style>

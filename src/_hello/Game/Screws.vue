@@ -1,8 +1,11 @@
 <script setup>
+
 import ScrewIcon from "../../assets/icons/ScrewIcon.vue";
+
 </script>
 
 <template>
+
   <div
     style="
       background: radial-gradient(

@@ -11,8 +11,7 @@
       strokeLinecap="round"
       strokeLinejoin="round"
       d="M13.5 2H.5m13 5H.5m13 5H.5"
-    >
-    </path>
+    ></path>
   </svg>
 </template>
 

@@ -7,14 +7,11 @@
 :root {
   font-family: "Fira Code", system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
-
   font-weight: 400;
   font-size: 14px;
-
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
   background-color: #011627;
-
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -22,18 +19,10 @@
   -webkit-text-size-adjust: 100%;
 }
 
-html {
-  appearance: none;
-}
-
-/* Firefox */
-
 * {
   scrollbar-width: 20px;
   scrollbar-color: #607b96 #011627;
 }
-
-/* Chrome, Edge and Safari */
 
 *::-webkit-scrollbar {
   width: 21px;

@@ -1,13 +1,13 @@
-<script>
+<script setup>
 
-import { ref } from "vue"
-import useGameStore from "../stores/gameStore"
-import Screws from "./Game/Screws.vue"
-import SnakeGame from "./Game/SnakeGame.vue"
-import ArrowUp from "../assets/icons/ArrowUp.vue"
-import ArrowDown from "../assets/icons/ArrowDown.vue"
-import ArrowLeft from "../assets/icons/ArrowLeft.vue"
-import ArrowRight from "../assets/icons/ArrowRight.vue"
+import { ref } from "vue";
+import Screws from "./Game/Screws.vue";
+import SnakeGame from "./Game/SnakeGame.vue";
+import useGameStore from "../stores/gameStore";
+import ArrowUp from "../assets/icons/ArrowUp.vue";
+import ArrowLeft from "../assets/icons/ArrowLeft.vue";
+import ArrowRight from "../assets/icons/ArrowRight.vue";
+import ArrowDown from "../assets/icons/ArrowDown.vue";
 
 const food = ref(5);
 const bailOut = ref(false);
@@ -40,7 +40,9 @@ function skipGame() {
       style="box-shadow: inset 1px 5px 11px rgba(2, 18, 27, 0.71)"
     >
       <Transition name="fade">
-        <SnakeGame v-if="food > 0" :eatFood="eatFood" />
+        <SnakeGame
+          v-if="food > 0" :eatFood="eatFood" 
+        />
       </Transition>
       <div
         v-motion
@@ -80,15 +82,13 @@ function skipGame() {
         </p>
       </div>
     </div>
-    <div 
-      class="col-span-3 flex flex-col pt-6"
-    >
+    <div class="col-span-3 flex flex-col pt-6">
       <div>
         <p class="text-gray-500">
-            // use keyboard
+          // use keyboard
         </p>
         <p class="text-gray-500">
-            // arrows to play
+          // arrows to play
         </p>
         <div
           class="keyboard-division p-3 px-5 text-2xl bg-[#00000015] bg-opacity-20 rounded-2xl"
@@ -115,9 +115,11 @@ function skipGame() {
           </div>
         </div>
         <p class="mt-8 text-gray-500">
-            // food left
+          // food left
         </p>
-        <div class="grid grid-cols-5 gap-6 px-3 py-3">
+        <div
+          class="grid grid-cols-5 gap-6 px-3 py-3"
+        >
           <div
             :key="ele"
             v-for="ele in [1, 2, 3, 4, 5]"
@@ -135,10 +137,10 @@ function skipGame() {
     </div>
     <Screws />
   </div>
+
 </template>
 
 <style scoped>
-
 .background-gamesection-div {
   background: linear-gradient(
     150.26deg,
