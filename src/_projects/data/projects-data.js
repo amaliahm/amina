@@ -1,13 +1,14 @@
-import CssIcon from "../../../assets/icons/DeviconCss3.svg";
-import GolangIcon from "../../../assets/icons/SkillsIconsGolang.svg";
-import HtmlIcon from "../../../assets/icons/DeviconHtml5.svg";
-import NestIcon from "../../../assets/icons/SkillIconsNestjsDark.svg";
-import NextJsIcon from "../../../assets/icons/LogosNextjsIcon.svg";
-import NuxtIcon from "../../../assets/icons/SkillIconsNuxtjsDark.svg";
-import PythonIcon from "../../../assets/icons/SkillIconsPythonDark.svg";
-import ReactIcon from "../../../assets/icons/SkillIconsReactDark.svg";
-import SvelteIcon from "../../../assets/icons/SkillsIconsSvelte.svg";
-import VueIcon from "../../../assets/icons/SkillIconsVuejsDark.svg";
+
+import CssIcon from "../../assets/icons/DeviconCss3.svg";
+import GolangIcon from "../../assets/icons/SkillsIconsGolang.svg";
+import HtmlIcon from "../../assets/icons/DeviconHtml5.svg";
+import NestIcon from "../../assets/icons/SkillIconsNestjsDark.svg";
+import NextJsIcon from "../../assets/icons/LogosNextjsIcon.svg";
+import NuxtIcon from "../../assets/icons/SkillIconsNuxtjsDark.svg";
+import PythonIcon from "../../assets/icons/SkillIconsPythonDark.svg";
+import ReactIcon from "../../assets/icons/SkillIconsReactDark.svg";
+import SvelteIcon from "../../assets/icons/SkillsIconsSvelte.svg";
+import VueIcon from "../../assets/icons/SkillIconsVuejsDark.svg";
 
 const data = [
   {

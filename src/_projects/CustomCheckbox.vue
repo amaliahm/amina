@@ -1,6 +1,7 @@
 <script setup>
+
 import { ref, watch } from "vue";
-import { useProjectsStore } from "../../stores/projectsStore";
+import useProjectsStore from "../stores/projectsStore";
 
 const { data } = defineProps(["data"]);
 
@@ -20,9 +21,11 @@ watch(projectsStore, () => {
     isChecked.value = false;
   }
 });
+
 </script>
 
 <template>
+
   <div
     @click="isChecked = !isChecked"
     class="group flex flex-row gap-4 items-center cursor-pointer"
@@ -66,10 +69,11 @@ watch(projectsStore, () => {
       {{ data.title }}
     </span>
   </div>
+
 </template>
 
 <style scoped>
-/* we will explain what these classes do next! */
+
 .fade-enter-active,
 .fade-leave-active {
   transition: opacity 0.5s ease;
@@ -79,4 +83,5 @@ watch(projectsStore, () => {
 .fade-leave-to {
   opacity: 0;
 }
+
 </style>

@@ -4,13 +4,13 @@ import { ref, onMounted } from "vue";
 import NavigationBar from "./components/NavBar.vue";
 import NavigationBarMobile from "./components/NavBarMobile.vue";
 import FooterBar from "./components/FooterBar.vue";
-import HeroSection from "./_hello/Hero.vue";
+import Hero from "./_hello/Hero.vue";
 import useNavStore from "./stores/navStore";
 import AboutMe from "./_about-me/About.vue";
+import Projects from "./_projects/Projects.vue";
+import Contact from "./_contact-me/Contact.vue";
 
 
-// import ProjectsSection from "./components/_projects/ProjectsSection.vue";
-// import ContactSection from "./components/_contact-me/ContactSection.vue";
 
 const navStore = useNavStore();
 </script>
@@ -29,22 +29,21 @@ const navStore = useNavStore();
       <template 
         v-if="navStore.activeElement == '_hello'"
       >
-        <HeroSection />
+        <Hero />
       </template>
       <template 
         v-else-if="navStore.activeElement == '_about-me'"
       >
         <AboutMe />
       </template>
-      <!-- <template v-else-if="navStore.activeElement == '_projects'">
-        <ProjectsSection />
-      </template> -->
-      <!-- <template v-else-if="navStore.activeElement == '_contact-me'">
-        <ContactSection />
-      </template> -->
+      <template v-else-if="navStore.activeElement == '_projects'">
+        <Projects />
+      </template>
+      <template v-else-if="navStore.activeElement == '_contact-me'">
+        <Contact />
+      </template>
     </Transition>
 
-    <!-- Footer -->
     <FooterBar />
   </div>
 </template>
