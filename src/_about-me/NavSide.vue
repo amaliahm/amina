@@ -4,7 +4,6 @@ import useAboutMeStore from "../stores/AboutMeStore";
 import FoldersWithFiles from "./NavSide/FolderWithFiles.vue";
 import personalInfo from "./data/personal-info.js";
 import professionalInfo from "./data/professional-info.js";
-import interestsInfo from "./data/interests-info.js";
 import EmailIconVue from "../assets/icons/EmailIcon.vue";
 import PhoneIcon from "../assets/icons/PhoneIcon.vue";
 import CommandPromptIcon from "../assets/icons/CommandPromptIcon.vue";
@@ -40,13 +39,6 @@ const aboutMeStore = useAboutMeStore();
         class="p-3 text-[#607B96] hover:text-white cursor-pointer transition-all duration-400 ease"
       >
         <GlobeIcon />
-      </p>
-      <p
-        @click="aboutMeStore.setActiveCategory('interests-info')"
-        :style="{ color: aboutMeStore.opened.category == 'interests-info' ? 'white' : '' }"
-        class="p-3 text-[#607B96] hover:text-white cursor-pointer transition-all duration-400 ease"
-      >
-        <GamepadIcon />
       </p>
     </div>
     <div
@@ -109,40 +101,7 @@ const aboutMeStore = useAboutMeStore();
             />
           </div>
         </template>
-        <template v-else-if="aboutMeStore.opened.category == 'interests-info'">
-          <div class="flex flex-col pt-2 pl-1 pb-6">
-            <FoldersWithFiles 
-              :key="ele"
-              v-for="ele in interestsInfo" 
-              :data="ele" 
-            />
-          </div>
-        </template>
       </Transition>
-      <h2 class="px-3 py-1 border-solid border-[#1e2d3d] border-y-[1px]">
-        <ArrowDown class="inline" />
-        contacts
-      </h2>
-      <div class="relative flex flex-col gap-2 px-2 py-2">
-        <p
-          title="adanayaztracer@gmail.com"
-          class="flex flex-row gap-3 items-start text-[#607B96] truncate"
-        >
-          <EmailIconVue class="mt-[4px]" />
-          <span>
-            a.ghandouz
-            <br />
-              @esi-sba.dz
-            </span>
-        </p>
-
-        <p class="flex flex-row items-end gap-1 text-[#607B96]">
-          <PhoneIcon />
-          <span> 
-            +555
-          </span>
-        </p>
-      </div>
     </div>
   </div>
 
