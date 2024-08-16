@@ -19,15 +19,6 @@ const { data, index } = defineProps([
       </span>
     </div>
     <div class="relative flex flex-col rounded-xl">
-      <div class="flex flex-row gap-2 absolute top-[10px] right-[10px]">
-        <img
-          :key="ele"
-          v-for="ele in data.technologies"
-          :src="ele.icon"
-          :alt="ele.title + '_icon'"
-          class="w-8 h-8"
-        />
-      </div>
       <img
         :src="data.img"
         alt="project-image"
@@ -37,13 +28,15 @@ const { data, index } = defineProps([
         <p class="text-[#607B96]">
           {{ data.desc }}
         </p>
-        <a
-          :href="data.link"
-          target="_blank"
-          class="w-fit flex items-center justify-center px-4 py-3 rounded-lg text-white bg-[#1C2B3A] hover:bg-opacity-50"
-        >
-          view-project
-        </a>
+        <div class="flex flex-row gap-2 p-2 bg-[#011221] rounded-b-lg">
+          <a 
+            :key="ele"
+            v-for="ele in data.used" 
+            class="w-fit flex items-center justify-center px-4 py-3 rounded-lg text-white bg-[#1C2B3A] hover:bg-opacity-50"
+          >
+            {{ ele }}
+          </a>
+        </div>
       </div>
     </div>
   </div>

@@ -13,57 +13,19 @@ import SvelteIcon from "../assets/icons/SvelteIcon.svg";
 import NestIcon from "../assets/icons/NestIcon.svg";
 import GolangIcon from "../assets/icons/GolangIcon.svg";
 import PythonIcon from "../assets/icons/PythonIcon.svg";
+import Android from "../assets/icons/Android.svg";
+import Chrome from "../assets/icons/Chrome.svg";
 
 const data = [
   {
-    title: "React",
-    img: ReactIcon,
-    id: "_react",
+    title: "Website",
+    img: Chrome,
+    id: "_website",
   },
   {
-    title: "Vue",
-    img: VueIcon,
-    id: "_vue",
-  },
-  {
-    title: "HTML",
-    img: HtmlIcon,
-    id: "_html",
-  },
-  {
-    title: "CSS",
-    img: CssIcon,
-    id: "_css",
-  },
-  {
-    title: "NextJS",
-    img: NextJsIcon,
-    id: "_nextjs",
-  },
-  {
-    title: "Nuxt",
-    img: NuxtIcon,
-    id: "_nuxt",
-  },
-  {
-    title: "Svelte",
-    img: SvelteIcon,
-    id: "_svelte",
-  },
-  {
-    title: "NestJS",
-    img: NestIcon,
-    id: "_nestjs",
-  },
-  {
-    title: "Python",
-    img: PythonIcon,
-    id: "_python",
-  },
-  {
-    title: "Golang",
-    img: GolangIcon,
-    id: "_golang",
+    title: "Mobile",
+    img: Android,
+    id: "_mobile",
   },
 ];
 

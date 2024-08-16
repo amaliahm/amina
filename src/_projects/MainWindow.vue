@@ -74,29 +74,6 @@ watch(projectsToRender, () => {
               alt="not-found-gif"
               class="h-52 w-52 object-cover rounded-full mb-4"
             />
-            <p>
-              Ah, dang! Maybe the project I made with this stack was most likely
-              for my own narrow scoped use
-            </p>
-            <p>
-              OR
-            </p>
-            <p>
-              I learned the tech stack and didn't make a presentable project
-              with it yet 
-              <br />
-              (I have yet to make even one presentable project, such a Chad I
-              am).
-            </p>
-            <p>
-              BUT
-            </p>
-            <p>
-              You can give me awesome suggestions and I'll make them for YOU and
-              ME 
-              <br />
-              (they are gonna go in my showcase, hehe).
-            </p>
           </div>
         </Transition>
         <TransitionGroup 
