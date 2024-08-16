@@ -1,125 +1,162 @@
 
-import CssIcon from "../../assets/icons/DeviconCss3.svg";
-import GolangIcon from "../../assets/icons/SkillsIconsGolang.svg";
-import HtmlIcon from "../../assets/icons/DeviconHtml5.svg";
-import NestIcon from "../../assets/icons/SkillIconsNestjsDark.svg";
-import NextJsIcon from "../../assets/icons/LogosNextjsIcon.svg";
-import NuxtIcon from "../../assets/icons/SkillIconsNuxtjsDark.svg";
-import PythonIcon from "../../assets/icons/SkillIconsPythonDark.svg";
-import ReactIcon from "../../assets/icons/SkillIconsReactDark.svg";
-import SvelteIcon from "../../assets/icons/SkillsIconsSvelte.svg";
-import VueIcon from "../../assets/icons/SkillIconsVuejsDark.svg";
 import Android from "../../assets/icons/Android.svg";
 import Chrome from "../../assets/icons/Chrome.svg";
+import audio_player_app from "../../assets/images/audioPlayer.jpg";
+import snake_game from "../../assets/images/snakeGame.jpg";
+import youtube from "../../assets/images/youtube.png";
+import travel_app from "../../assets/images/travelApp.png";
+import timetable_app from "../../assets/images/timetableApp.png";
 
 const data = [
   {
-    id: 1000,
+    id: 1,
     title: "Project 1",
-    theme: "_kanban-board",
+    theme: "Audio player app",
     technologies: [
       { title: "Mobile", icon: Android },
     ],
-    used : ['React', 'HTML'],
-    desc: "A general Kanban Ticketing System built with NextJS and Supabase.",
-    img: "https://res.cloudinary.com/ddfjwg2rb/image/upload/v1722365792/My%20Uploads/Portfolio%20Projects/Kanban%20Project/LandingPageImage.png",
+    used : ['Flutter'],
+    desc: "Flutter application where you can play, stop, repeat or release audio, fast or slow forward, auto stop when navigate. All audios are in local API.",
+    img: audio_player_app,
   },
   {
-    id: 2000,
+    id: 2,
     title: "Project 2",
-    theme: "_conference-app",
+    theme: "Snake game",
+    technologies: [
+      { title: "Mobile", icon: Android },
+    ],
+    used : ['Flutter'],
+    desc: "Simple Flutter snake game.",
+    img: snake_game,
+  },
+  {
+    id: 3,
+    title: "Project 3",
+    theme: "Youtube",
     technologies: [
       { title: "Website", icon: Chrome },
     ],
-    desc: "A conference-app built on Nuxt, Supabase and tRPC.",
-    img: "https://images.pexels.com/photos/5011647/pexels-photo-5011647.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    used : ['Javascript', 'Html', "Css"],
+    desc: "A complete YouTube redesign with enhanced user interface while maintaining full functionality.",
+    img: youtube,
   },
   {
-    id: 3000,
-    title: "Project 3",
-    theme: "_gamebuddies-matchmaker",
-    technologies: [
-      { title: "Golang", icon: GolangIcon },
-      { title: "Svelte", icon: SvelteIcon },
-    ],
-    desc: "A conference-app built on Nuxt, Supabase and tRPC.",
-    img: "https://i.ibb.co/gzLn8GZ/image-5.png",
-  },
-  {
-    id: 4000,
+    id: 4,
     title: "Project 4",
-    theme: "_static-site-gen-v1",
+    theme: "Travel app",
     technologies: [
-      { title: "Python", icon: PythonIcon },
-      { title: "HTML", icon: HtmlIcon },
+      { title: "Mobile", icon: Android },
     ],
-    desc: "A static site generator that recursively generates HTML from Markdown.",
-    img: "https://res.cloudinary.com/ddfjwg2rb/image/upload/v1722366730/My%20Uploads/Portfolio%20Projects/Static%20Site%20Generator%20v1/ThumbnailImage.jpg",
+    used : ['Flutter'],
+    desc: "Frontend of a travel app, with user-friendly interface and smooth navigation. It contains 3 onboarding interfaces, home page to display places and another one for the details of each place like the stars, price, little desc etc",
+    img: travel_app,
   },
   {
-    id: 5000,
+    id: 5,
     title: "Project 5",
-    theme: "_chat-app",
+    theme: "Schedule app",
     technologies: [
-      { title: "Vue", icon: VueIcon },
-      { title: "Nuxt", icon: NuxtIcon },
+      { title: "Mobile", icon: Android },
     ],
-    desc: "A basic chat application built on Nuxt and Supabase.",
-    img: "https://i.ibb.co/fDcYLCp/OIG.jpg",
-  },
-  {
-    id: 6000,
-    title: "Project 6",
-    theme: "_online-store",
-    technologies: [
-      { title: "React", icon: ReactIcon },
-      { title: "NextJS", icon: NextJsIcon },
-    ],
-    desc: "A mimickery of a online store design using NextJS.",
-    img: "https://i.ibb.co/tbymZzK/index.png",
-  },
-  {
-    id: 7000,
-    title: "Project 7",
-    theme: "_portfolio-site",
-    technologies: [{ title: "Vue", icon: VueIcon }],
-    desc: "My own portfolio site built on top of Vue as a SPA.",
-    img: "https://i.ibb.co/WcFc25V/index2.png",
-  },
-  {
-    id: 8000,
-    title: "Project 8",
-    theme: "_agency-website",
-    technologies: [
-      { title: "React", icon: ReactIcon },
-      { title: "NextJS", icon: NextJsIcon },
-    ],
-    desc: "An agency website built with NextJS and Framer Motion.",
-    icon: NextJsIcon,
-    img: "https://i.ibb.co/NZ7skxR/image.png",
-  },
-  {
-    id: 9000,
-    title: "Project 9",
-    theme: "_novel-pub",
-    technologies: [
-      { title: "React", icon: ReactIcon },
-      { title: "NextJS", icon: NextJsIcon },
-    ],
-    desc: "A full-stack light novel web app built atop of NextJS frontend + NextJS Web scraping",
-    img: "https://img.freepik.com/free-photo/colorful-ball-ribbons_71767-142.jpg?t=st=1687028246~exp=1687028846~hmac=95b0d7a5a5bc29ce5c447dfb77fea6cacd6f7ddf4fc532fa2d3a256aeba38b97",
-  },
-  {
-    id: 10000,
-    title: "Project 10",
-    theme: "_drove-drive",
-    technologies: [
-      { title: "React", icon: ReactIcon },
-      { title: "NextJS", icon: NextJsIcon },
-    ],
-    desc: "An agency showcase site with transitions built with NextJS and Framer Motion.",
-    img: "https://i.ibb.co/VmTft8Z/scrnli-7-25-2024-1-28-01-PM.png",
+    used : ['Flutter', 'Sqflite'],
+    desc: "Application for organize your day where you can add tasks with some information for each one and display each day's tasks. Schedule is flutter application where you can: change theme mode (dark / light) - see the calender - add task - mark it as completed - delete task - you can add some information about the task like the title or description for more details, choose a date for your task, choose start time and end time, choose color for the background of the task when display it.",
+    img: timetable_app,
   },
 ];
+
+// const projects = [
+//   {
+//     name: 'smart home app',
+//     image: smart_home_app,
+//     description: 'single page of homesmart application where you can control Smart TV Smart Light Smart AC Smart Fan',
+//     source_code_link: 'https://github.com/amaliahm/home.git',
+//     tags: ['flutter']
+//   },
+//   {
+//     name: 'shoes store',
+//     image: shoes_store,
+//     description: 'shoes store app design',
+//     source_code_link: 'none',
+//     tags: ['figma'],
+//   },
+//   {
+//     name: 'registration pages',
+//     image: registration_pages,
+//     description: 'sign in/up pages desing',
+//     source_code_link: 'none',
+//     tags: ['figma']
+//   },
+//   {
+//     name: 'portfolio',
+//     image: portfolio,
+//     source_code_link: 'https://github.com/amaliahm/portfolio.git',
+//     description: 'i made this portfolio',
+//     tags: ['reactJs', 'firebase']
+//   },
+//   {
+//     name: 'payment app',
+//     image: payment_app,
+//     description: 'Flutter mobile application where you can pay your bills all at once, using API',
+//     tags: ['flutter'],
+//     source_code_link: 'https://github.com/amaliahm/payment_app.git',
+//   },
+//   {
+//     name: 'music app design',
+//     image: music_app_design,
+//     description: 'music app design',
+//     source_code_link: 'none',
+//     tags: ['figma']
+//   },
+//   {
+//     name: 'meet app design',
+//     image: meet_app_design,
+//     description: 'meet app desing',
+//     source_code_link: 'none',
+//     tags: ['figma']
+//   },
+//   {
+//     name: 'fitness registration app',
+//     image: fitness_registration_app,
+//     description: 'Fitness Flutter mobile application registration UI: Welcome page - Sign up page - Sign in page -Forget password page',
+//     tags: ['flutter'],
+//     source_code_link: 'https://github.com/amaliahm/fitness_app.git'
+//   },
+//   {
+//     name: 'filmy site',
+//     image: filmy_site,
+//     description: 'website for films and series',
+//     source_code_link: 'none',
+//     tags: ['figma']
+//   },
+//   {
+//     name: 'dashboard',
+//     image: dashboard,
+//     description: 'dashboard design',
+//     source_code_link: 'none',
+//     tags: ['figma']
+//   },
+//   {
+//     name: 'chat application',
+//     image: chat_application,
+//     description: 'chat application where you can -> sign in with google -> have a conversation with your friends ( you can send message, image ) -> set settings',
+//     tags: ['flutter', 'firebase'],
+//     source_code_link: 'https://github.com/amaliahm/chat_app.git'
+//   },
+//   {
+//     name: 'chat app design',
+//     image: chat_app_design,
+//     description: 'ui design for chat application',
+//     source_code_link: 'none',
+//     tags: ['figma'],
+//   },
+//   {
+//     name: 'buy and sell app design',
+//     image: buy_and_sell_app_design,
+//     description: 'buy and sell app design',
+//     source_code_link: 'none',
+//     tags: ['figma']
+//   },
+// ]
 
 export default data;
