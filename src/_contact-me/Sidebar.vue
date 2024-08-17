@@ -13,23 +13,6 @@ import OpenInWindowIcon from "../assets/icons/OpenInWindowIcon.vue";
     class="w-full lg:w-[250px] h-full flex flex-col border-r-[1px] border-[#1E2D3D]"
   >
     <h1
-      class="flex gap-2 items-center px-4 py-1 border-b-[1px] border-[#1E2D3D]"
-    >
-      <ArrowDownVue />
-      contacts
-    </h1>
-    <div class="flex flex-col gap-2 py-4 px-3">
-      <a
-        href="mailto:a.ghandouz@esi-sba.dz"
-        class="flex gap-1 items-start text-[#607B96] px-1 hover:text-white transition-all duration-400"
-      >
-        <EmailIconVue class="mt-1" />
-        a.ghandouz
-        <br />
-        @esi-sba.dz
-      </a>
-    </div>
-    <h1
       class="flex gap-2 items-center px-4 py-1 border-y-[1px] border-[#1E2D3D]"
     >
       <ArrowDownVue /> 
@@ -38,18 +21,11 @@ import OpenInWindowIcon from "../assets/icons/OpenInWindowIcon.vue";
 
     <div class="flex flex-col gap-2 py-4 px-3">
       <a
-        href="https://instagram.com/amina._.gh_"
+        href="https://linktr.ee/aminaghandouz"
         class="flex gap-1 items-end text-[#607B96] px-1 hover:text-white transition-all duration-400"
       >
         <OpenInWindowIcon class="mt-1 mr-1 text-2xl" />
-        Instagram Account
-      </a>
-      <a
-        href="https://twitter.com/amina_gh_"
-        class="flex gap-1 items-end text-[#607B96] px-1 hover:text-white transition-all duration-400"
-      >
-        <OpenInWindowIcon class="mt-1 mr-1 text-2xl" />
-        Twitter Account
+        Linktr Account
       </a>
     </div>
   </div>
