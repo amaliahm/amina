@@ -27,7 +27,7 @@ const data = [
           "/**",
           "Hey again, let me introduce myself. I am a versatile Full Stack Developer specializing in modern web and mobile development.",
           "",
-          "My expertise spans across frontend technologies like React.js and Vue.js, along with backend proficiency in Node.js and database management.",
+          "My expertise spans across frontend technologies like React.js, Next.js and Vue.js, along with backend proficiency in Node.js and database management.",
           "",
           "I have a strong foundation in Flutter for mobile app development, enabling me to build responsive, cross-platform applications.",
           "",
