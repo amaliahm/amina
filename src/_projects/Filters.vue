@@ -15,6 +15,7 @@ import GolangIcon from "../assets/icons/GolangIcon.svg";
 import PythonIcon from "../assets/icons/PythonIcon.svg";
 import Android from "../assets/icons/Android.svg";
 import Chrome from "../assets/icons/Chrome.svg";
+import IASD from "../assets/icons/IASD.svg"
 
 const data = [
   {
@@ -26,6 +27,11 @@ const data = [
     title: "Mobile",
     img: Android,
     id: "_mobile",
+  },
+  {
+    title: "AI & DS",
+    img: IASD,
+    id: "_iasd",
   },
 ];
 

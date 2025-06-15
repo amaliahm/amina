@@ -1,6 +1,8 @@
 
 import Android from "../../assets/icons/Android.svg";
 import Chrome from "../../assets/icons/Chrome.svg";
+import IASD from "../../assets/icons/IASD.svg"
+
 import audio_player_app from "../../assets/images/audioPlayer.jpg";
 import snake_game from "../../assets/images/snakeGame.jpg";
 import youtube from "../../assets/images/youtube.png";
@@ -21,6 +23,8 @@ import jewellery from "../../assets/images/jewellery.png";
 import elearn from "../../assets/images/elearn.png";
 import attendy from "../../assets/images/attendy.png";
 import stoop from "../../assets/images/stoop.png";
+import anasheed from "../../assets/images/anasheed.png"
+import lawdz from "../../assets/images/lawdz.png"
 
 const data = [
   {
@@ -30,7 +34,7 @@ const data = [
     technologies: [
       { title: "Website", icon: Chrome },
     ],
-    used : ['Nodejs', 'Reactjs', 'Mysql'],
+    used : ['Nodejs', 'Reactjs', 'MySQL'],
     desc: "A management system for overseeing products, clients, transactions etc, enabling streamlined control over inventory and financial operations. ",
     img: jewellery,
   },
@@ -41,7 +45,7 @@ const data = [
     technologies: [
       { title: "Website", icon: Chrome },
     ],
-    used : ['Reactjs', 'Mysql', 'Django'],
+    used : ['Reactjs', 'MySQL', 'Django'],
     desc: "A learning platform that offers students and professors a centralized space for accessing courses, sharing documents, communicating, and participating in quizzes. ",
     img: elearn,
   },
@@ -52,7 +56,7 @@ const data = [
     technologies: [
       { title: "Website", icon: Chrome },
     ],
-    used : ['ReactJs', 'Mysql', 'Firebase'],
+    used : ['ReactJs', 'MySQL', 'Firebase'],
     desc: "Learning platform that tracks student attendance via QR codes, manages classes, and provides a communication space for interactions.",
     img: attendy,
   },
@@ -63,7 +67,7 @@ const data = [
     technologies: [
       { title: "Mobile", icon: Android },
     ],
-    used : ['Flutter', 'Nodejs', 'Mysql'],
+    used : ['Flutter', 'Nodejs', 'MySQL'],
     desc: "A mobile app for inter-wilaya travel that allows normal clients and car owners to communicate and arrange transportation.",
     img: stoop,
   },
@@ -195,8 +199,8 @@ const data = [
     technologies: [
       { title: "Mobile", icon: Android },
     ],
-    used : ['Flutter', 'Mysql', 'Firebase'],
-    desc: "Learning platform that tracks student attendance via QR codes, manages classes, and provides a communication space for interactions..",
+    used : ['Flutter', 'MySQL', 'Firebase'],
+    desc: "Learning platform that tracks student attendance via QR codes, manages classes, and provides a communication space for interactions.",
     img: attendy,
   },
   {
@@ -253,6 +257,28 @@ const data = [
     used : ['Flutter', 'Firebase'],
     desc: "Chat application where you can signin with google, send message/image in your conversations and set settings",
     img: chat_app,
+  },
+  {
+    id: 22,
+    title: "Project 22",
+    theme: "Anasheed",
+    technologies: [
+      { title: "Website", icon: Chrome },
+    ],
+    used : ['ReactJS', 'NodejJs', 'MySQL'],
+    desc: "Anashid Digital Platform offers seamless access to Islamic chants with advanced search, playlist creation, listening history, and user engagement, while providing admins full control over content, users, and platform analytics.",
+    img: anasheed,
+  },
+  {
+    id: 23,
+    title: "Project 23",
+    theme: "Algerian LawDZ",
+    technologies: [
+      { title: "AI & DS", icon: IASD },
+    ],
+    used : ['PyMuPDF', 'OCR', 'Embedding model', 'FAISS', 'LLM', 'RAG', 'Streamlit'],
+    desc: "Built an AI-powered legal assistant that analyzes Algeria’s Journal Officiel (Official Gazette) by extracting legal texts to help users get accurate and context-aware answers to their legal inquiries.",
+    img: lawdz,
   },
 ];
 
