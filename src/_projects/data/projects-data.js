@@ -25,6 +25,8 @@ import attendy from "../../assets/images/attendy.png";
 import stoop from "../../assets/images/stoop.png";
 import anasheed from "../../assets/images/anasheed.png"
 import lawdz from "../../assets/images/lawdz.png"
+import book_recommendation_system from "../../assets/images/book_recommendation_system.png"
+import monet_style_transfer from "../../assets/images/monet_style_transfer.png"
 
 const data = [
   {
@@ -272,12 +274,34 @@ const data = [
   {
     id: 23,
     title: "Project 23",
+    theme: "Book Recommendation system",
+    technologies: [
+      { title: "AI & DS", icon: IASD },
+    ],
+    used : ['FP-Growth', 'Apriori', 'Eclat', 'Python', 'Kaggle', 'Streamlit'],
+    desc: "Explored multiple association rule learning algorithms to build a book recommendation system then selecting FP-Growth for its efficiency and accuracy. The system generates personalized book suggestions by identifying frequent reading patterns.",
+    img: book_recommendation_system,
+  },
+  {
+    id: 24,
+    title: "Project 24",
+    theme: "Monet style transfer",
+    technologies: [
+      { title: "AI & DS", icon: IASD },
+    ],
+    used : ['Python', 'CycleGAN', 'Kaggle', 'Streamlit'],
+    desc: "Built a neural style transfer system to transform images into Monet-style paintings using CycleGAN trained on a Kaggle dataset. A Streamlit interface allows users to upload images and visualize real-time artistic transformations.",
+    img: monet_style_transfer,
+  },
+  {
+    id: 25,
+    title: "Project 25",
     theme: "Algerian LawDZ",
     technologies: [
       { title: "AI & DS", icon: IASD },
     ],
-    used : ['PyMuPDF', 'OCR', 'Embedding model', 'FAISS', 'LLM', 'RAG', 'Streamlit'],
-    desc: "Built an AI-powered legal assistant that analyzes Algeria’s Journal Officiel (Official Gazette) by extracting legal texts to help users get accurate and context-aware answers to their legal inquiries.",
+    used : ['PyMuPDF', 'OCR', 'Embedding model', 'FAISS', 'LLM', 'RAG', 'Kaggle', 'Streamlit'],
+    desc: "AI-powered legal assistant that analyzes Algeria’s Journal Officiel (Official Gazette) by extracting legal texts to help users get accurate and context-aware answers to their legal inquiries.",
     img: lawdz,
   },
 ];
