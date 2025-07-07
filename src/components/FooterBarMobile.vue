@@ -1,6 +1,6 @@
 <script setup>
 
-import InstagramIcon from "../assets/icons/InstagramIcon.vue";
+import LinkedinIcon from '../assets/icons/LinkedinIcon.vue'
 import TwitterIcon from "../assets/icons/TwitterIcon.vue";
 import GithubIcon from "../assets/icons/GithubIcon.vue";
 
@@ -24,11 +24,11 @@ import GithubIcon from "../assets/icons/GithubIcon.vue";
         <TwitterIcon />
       </a>
       <a
-        href="https://instagram.com/amina._.gh_"
+        href="https://www.linkedin.com/in/aminaghandouz/"
         target="_blank"
         class="p-4 border-solid border-[#1e2d3d] border-r-[1px] hover:text-white"
       >
-        <InstagramIcon />
+        <LinkedinIcon />
       </a>
       <a 
         href="https://github.com/amaliahm" 
