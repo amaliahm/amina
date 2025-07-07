@@ -27,6 +27,7 @@ import anasheed from "../../assets/images/anasheed.png"
 import lawdz from "../../assets/images/lawdz.png"
 import book_recommendation_system from "../../assets/images/book_recommendation_system.png"
 import monet_style_transfer from "../../assets/images/monet_style_transfer.png"
+import TrackWise from '../../assets/images/TrackWise.png'
 
 const data = [
   {
@@ -303,6 +304,17 @@ const data = [
     used : ['PyMuPDF', 'OCR', 'Embedding model', 'FAISS', 'LLM', 'RAG', 'Kaggle', 'Streamlit'],
     desc: "AI-powered legal assistant that analyzes Algeria’s Journal Officiel (Official Gazette) by extracting legal texts to help users get accurate and context-aware answers to their legal inquiries.",
     img: lawdz,
+  },
+  {
+    id: 26,
+    title: "Project 26",
+    theme: "TrackWise",
+    technologies: [
+      { title: "Website", icon: Chrome },
+    ],
+    used : ['ReactJS', 'ExpressJS', 'NodeJS', 'MongoDB'],
+    desc: "Full-stack expense tracking web application featuring secure backend operations and a dynamic user interface. Users can add, manage, and visualize their expenses over time.",
+    img: TrackWise,
   },
 ];
 
