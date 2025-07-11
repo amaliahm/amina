@@ -29,6 +29,7 @@ import book_recommendation_system from "../../assets/images/book_recommendation_
 import monet_style_transfer from "../../assets/images/monet_style_transfer.png"
 import TrackWise from '../../assets/images/TrackWise.png'
 import ts_portfolio from '../../assets/images/ts_portfolio.png'
+import sample_js_portfolio from '../../assets/images/sample_js_portfolio.png'
 
 const data = [
   {
@@ -327,6 +328,17 @@ const data = [
     used : ['ReactJS', 'TypeScript', 'Framer Motion', 'TailwindCss', 'Vite'],
     desc: "An interactive and visually polished developer portfolio that showcases professional background, skills, projects and blogs through a smooth and modern user experience.",
     img: ts_portfolio,
+  },
+  {
+    id: 28,
+    title: "Project 28",
+    theme: "Sample JS Portfolio",
+    technologies: [
+      { title: "Website", icon: Chrome },
+    ],
+    used : ['JavaScript', 'CSS3', 'HTML5'],
+    desc: "Sample Portfolio project with JS to show your projects.",
+    img: sample_js_portfolio,
   },
 ];
 
