@@ -28,6 +28,7 @@ import lawdz from "../../assets/images/lawdz.png"
 import book_recommendation_system from "../../assets/images/book_recommendation_system.png"
 import monet_style_transfer from "../../assets/images/monet_style_transfer.png"
 import TrackWise from '../../assets/images/TrackWise.png'
+import ts_portfolio from '../../assets/images/ts_portfolio.png'
 
 const data = [
   {
@@ -315,6 +316,17 @@ const data = [
     used : ['ReactJS', 'ExpressJS', 'NodeJS', 'MongoDB'],
     desc: "Full-stack expense tracking web application featuring secure backend operations and a dynamic user interface. Users can add, manage, and visualize their expenses over time.",
     img: TrackWise,
+  },
+  {
+    id: 27,
+    title: "Project 27",
+    theme: "TypeScript Portfolio",
+    technologies: [
+      { title: "Website", icon: Chrome },
+    ],
+    used : ['ReactJS', 'TypeScript', 'Framer Motion', 'TailwindCss', 'Vite'],
+    desc: "An interactive and visually polished developer portfolio that showcases professional background, skills, projects and blogs through a smooth and modern user experience.",
+    img: ts_portfolio,
   },
 ];
 
