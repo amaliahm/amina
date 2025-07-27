@@ -1,24 +1,38 @@
 <script setup>
+import { ref } from 'vue'
+import ProjectModal from './ProjectModal.vue'
 
 const { data, index } = defineProps([
   "data", "index"
 ]);
 
+const isModalOpen = ref(false)
+
+const openModal = () => {
+  isModalOpen.value = true
+}
+
+const closeModal = () => {
+  isModalOpen.value = false
+}
 </script>
 
 <template>
-
   <div class="flex flex-col gap-4">
     <div class="flex flex-row gap-2 text-[#607B96]">
       <h1 class="font-bold text-[#5565E8]">
         {{ data.title }}
       </h1>
-      // 
+      //
       <span>
-        {{ data.theme }}
+        {{ data.project_number }}
       </span>
     </div>
-    <div class="relative flex flex-col rounded-xl h-[450px] bg-[#011221]">
+    
+    <div 
+      @click="openModal"
+      class="relative flex flex-col rounded-xl h-[450px] bg-[#011221] cursor-pointer hover:bg-opacity-80 transition-all duration-200"
+    >
       <img
         :src="data.img"
         alt="project-image"
@@ -29,9 +43,9 @@ const { data, index } = defineProps([
           {{ data.desc }}
         </p>
         <div class="flex flex-row gap-2 p-0 flex-wrap bg-[#011221] rounded-b-lg">
-          <a 
+          <a
             :key="ele"
-            v-for="ele in data.used" 
+            v-for="ele in data.used"
             class="w-fit flex items-center flex-wrap justify-center px-4 py-3 rounded-lg text-white bg-[#1C2B3A] hover:bg-opacity-50"
           >
             {{ ele }}
@@ -39,6 +53,11 @@ const { data, index } = defineProps([
         </div>
       </div>
     </div>
+
+    <ProjectModal 
+      :is-open="isModalOpen"
+      :data="data"
+      @close="closeModal"
+    />
   </div>
-  
 </template>

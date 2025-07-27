@@ -34,8 +34,8 @@ import sample_js_portfolio from '../../assets/images/sample_js_portfolio.png'
 const data = [
   {
     id: 1,
-    title: "Project 1",
-    theme: "Jewellery",
+    project_number: "Project 1",
+    title: "Jewellery",
     technologies: [
       { title: "Website", icon: Chrome },
     ],
@@ -45,8 +45,8 @@ const data = [
   },
   {
     id: 2,
-    title: "Project 2",
-    theme: "Elearn",
+    project_number: "Project 2",
+    title: "Elearn",
     technologies: [
       { title: "Website", icon: Chrome },
     ],
@@ -56,8 +56,8 @@ const data = [
   },
   {
     id: 3,
-    title: "Project 3",
-    theme: "Attendy",
+    project_number: "Project 3",
+    title: "Attendy",
     technologies: [
       { title: "Website", icon: Chrome },
     ],
@@ -67,8 +67,8 @@ const data = [
   },
   {
     id: 4,
-    title: "Project 4",
-    theme: "Stoop",
+    project_number: "Project 4",
+    title: "Stoop",
     technologies: [
       { title: "Mobile", icon: Android },
     ],
@@ -78,8 +78,8 @@ const data = [
   },
   {
     id: 5,
-    title: "Project 5",
-    theme: "Portfolio",
+    project_number: "Project 5",
+    title: "Portfolio",
     technologies: [
       { title: "Website", icon: Chrome },
     ],
@@ -89,8 +89,8 @@ const data = [
   },
   {
     id: 6,
-    title: "Project 6",
-    theme: "Audio player app",
+    project_number: "Project 6",
+    title: "Audio player app",
     technologies: [
       { title: "Mobile", icon: Android },
     ],
@@ -100,8 +100,8 @@ const data = [
   },
   {
     id: 7,
-    title: "Project 7",
-    theme: "Snake game",
+    project_number: "Project 7",
+    title: "Snake game",
     technologies: [
       { title: "Mobile", icon: Android },
     ],
@@ -111,8 +111,8 @@ const data = [
   },
   {
     id: 8,
-    title: "Project 8",
-    theme: "Youtube",
+    project_number: "Project 8",
+    title: "Youtube",
     technologies: [
       { title: "Website", icon: Chrome },
     ],
@@ -122,8 +122,8 @@ const data = [
   },
   {
     id: 9,
-    title: "Project 9",
-    theme: "Travel app",
+    project_number: "Project 9",
+    title: "Travel app",
     technologies: [
       { title: "Mobile", icon: Android },
     ],
@@ -133,8 +133,8 @@ const data = [
   },
   {
     id: 10,
-    title: "Project 10",
-    theme: "Schedule app",
+    project_number: "Project 10",
+    title: "Schedule app",
     technologies: [
       { title: "Mobile", icon: Android },
     ],
@@ -144,8 +144,8 @@ const data = [
   },
   {
     id: 11,
-    title: "Project 11",
-    theme: "Shoes store",
+    project_number: "Project 11",
+    title: "Shoes store",
     technologies: [
       { title: "Mobile", icon: Android },
     ],
@@ -155,8 +155,8 @@ const data = [
   },
   {
     id: 12,
-    title: "Project 12",
-    theme: "Portfolio",
+    project_number: "Project 12",
+    title: "Portfolio",
     technologies: [
       { title: "Website", icon: Chrome },
     ],
@@ -166,8 +166,8 @@ const data = [
   },
   {
     id: 13,
-    title: "Project 13",
-    theme: "Registration pages",
+    project_number: "Project 13",
+    title: "Registration pages",
     technologies: [
       { title: "Mobile", icon: Android },
     ],
@@ -177,8 +177,8 @@ const data = [
   },
   {
     id: 14,
-    title: "Project 14",
-    theme: "Payment app",
+    project_number: "Project 14",
+    title: "Payment app",
     technologies: [
       { title: "Mobile", icon: Android },
     ],
@@ -188,8 +188,8 @@ const data = [
   },
   {
     id: 15,
-    title: "Project 15",
-    theme: "Music app",
+    project_number: "Project 15",
+    title: "Music app",
     technologies: [
       { title: "Mobile", icon: Android },
     ],
@@ -199,8 +199,8 @@ const data = [
   },
   {
     id: 16,
-    title: "Project 16",
-    theme: "Attendy",
+    project_number: "Project 16",
+    title: "Attendy",
     technologies: [
       { title: "Mobile", icon: Android },
     ],
@@ -210,8 +210,8 @@ const data = [
   },
   {
     id: 17,
-    title: "Project 17",
-    theme: "Meet app",
+    project_number: "Project 17",
+    title: "Meet app",
     technologies: [
       { title: "Mobile", icon: Android },
     ],
@@ -221,8 +221,8 @@ const data = [
   },
   {
     id: 18,
-    title: "Project 18",
-    theme: "Fitness app",
+    project_number: "Project 18",
+    title: "Fitness app",
     technologies: [
       { title: "Mobile", icon: Android },
     ],
@@ -232,8 +232,8 @@ const data = [
   },
   {
     id: 19,
-    title: "Project 19",
-    theme: "Filmy site",
+    project_number: "Project 19",
+    title: "Filmy site",
     technologies: [
       { title: "Website", icon: Chrome },
     ],
@@ -243,8 +243,8 @@ const data = [
   },
   {
     id: 20,
-    title: "Project 20",
-    theme: "Invite dashboard",
+    project_number: "Project 20",
+    title: "Invite dashboard",
     technologies: [
       { title: "Website", icon: Chrome },
     ],
@@ -254,8 +254,8 @@ const data = [
   },
   {
     id: 21,
-    title: "Project 21",
-    theme: "Chat app",
+    project_number: "Project 21",
+    title: "Chat app",
     technologies: [
       { title: "Mobile", icon: Android },
     ],
@@ -265,8 +265,8 @@ const data = [
   },
   {
     id: 22,
-    title: "Project 22",
-    theme: "Anasheed",
+    project_number: "Project 22",
+    title: "Anasheed",
     technologies: [
       { title: "Website", icon: Chrome },
     ],
@@ -276,8 +276,8 @@ const data = [
   },
   {
     id: 23,
-    title: "Project 23",
-    theme: "Book Recommendation system",
+    project_number: "Project 23",
+    title: "Book Recommendation system",
     technologies: [
       { title: "AI & DS", icon: IASD },
     ],
@@ -287,8 +287,8 @@ const data = [
   },
   {
     id: 24,
-    title: "Project 24",
-    theme: "Monet style transfer",
+    project_number: "Project 24",
+    title: "Monet style transfer",
     technologies: [
       { title: "AI & DS", icon: IASD },
     ],
@@ -298,8 +298,8 @@ const data = [
   },
   {
     id: 25,
-    title: "Project 25",
-    theme: "Algerian LawDZ",
+    project_number: "Project 25",
+    title: "Algerian LawDZ",
     technologies: [
       { title: "AI & DS", icon: IASD },
     ],
@@ -309,8 +309,8 @@ const data = [
   },
   {
     id: 26,
-    title: "Project 26",
-    theme: "TrackWise",
+    project_number: "Project 26",
+    title: "TrackWise",
     technologies: [
       { title: "Website", icon: Chrome },
     ],
@@ -320,8 +320,8 @@ const data = [
   },
   {
     id: 27,
-    title: "Project 27",
-    theme: "TypeScript Portfolio",
+    project_number: "Project 27",
+    title: "TypeScript Portfolio",
     technologies: [
       { title: "Website", icon: Chrome },
     ],
@@ -331,8 +331,8 @@ const data = [
   },
   {
     id: 28,
-    title: "Project 28",
-    theme: "Sample JS Portfolio",
+    project_number: "Project 28",
+    title: "Sample JS Portfolio",
     technologies: [
       { title: "Website", icon: Chrome },
     ],
