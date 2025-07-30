@@ -10,7 +10,6 @@ const closeModal = () => {
   emit('close');
 };
 
-// Close modal when clicking outside
 const closeOnBackdrop = (event) => {
   if (event.target === event.currentTarget) {
     closeModal();
@@ -19,7 +18,6 @@ const closeOnBackdrop = (event) => {
 </script>
 
 <template>
-  <!-- Modal -->
   <div 
     v-if="isOpen"
     @click="closeOnBackdrop"
